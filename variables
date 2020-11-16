@@ -1,0 +1,35 @@
+################################################################################
+#
+# Variables
+#
+################################################################################
+
+
+set $key-alt Mod1
+set $key-super Mod4
+set $mod $key-super
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Preferred terminal emulator
+set $term gnome-terminal
+
+# Preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+set $menu "rofi -modi window, drun, run -show drun" 
+
+# Preferred screen locker
+set $lock swaylock-fancy
+
+# Workspaces
+set $workspace_www 1:WWW
+set $workspace_terminals 2:Terminals
+set $workspace_ide 3:IDE
+set $workspace_communications 4:Communications
+set $workspace_vms 5:VMs
+set $workspace_media 6:Media

@@ -1,0 +1,19 @@
+################################################################################
+#
+# Applications settings
+#
+################################################################################
+
+
+### Assign applications to workspaces
+
+assign [window_role="^browser$"]   		→ workspace $workspace_www
+assign [title="^Visual Studio Code"]          	→ workspace $workspace_ide
+assign [title="^gnome-terminal"]       		→ workspace $workspace_terminals
+assign [class="Thunderbird"]       		→ workspace $workspace_communications
+assign [class="^Microsoft Teams - Preview"]     → workspace $workspace_communications
+
+### Change window settings
+
+#for_window [window_role="browser"] layout tabbed
+#for_window [title="Sound Mixer"] floating enable

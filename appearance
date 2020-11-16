@@ -1,0 +1,14 @@
+# Set font
+for_window [class="^.*"] border pixel 1
+default_border pixel 3
+font pango:Cantarell 14px
+
+# Set wallpaper
+# Random
+# output * bg `lswallpaper | grep "/selected/" | sort -R | head -1` fill
+# Choose specific one
+output * bg ~/Pictures/mywall.jpg fill
+
+# Gaps
+gaps inner 5 
+#gaps outer 2

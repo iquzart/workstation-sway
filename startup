@@ -1,0 +1,28 @@
+################################################################################
+#
+# What to run after startup
+#
+################################################################################
+
+# TIP: Currently I don't know of any clean way of creating complex layouts
+# within a single workspace on startup. The only hacky solution I know about is
+# using timeouts with `sleep` command, e.g.:
+#
+#   sleep 0.3s && swaymsg "exec <command>"
+
+
+### Define some constants
+
+# Paths
+
+# Commands
+
+
+### Run applications
+
+# Run Teams
+exec teams
+
+# Run Google Chrome
+exec google-chrome-stable
+
