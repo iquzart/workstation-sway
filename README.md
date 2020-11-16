@@ -4,6 +4,6 @@
     This is a backup of my Sway configuration.
 
 
-![Alt text](https://github.com/iquzart/workstation-sway/doc/Screen.jpg?raw=true "Screen Sample")
+![Screen Sample](https://github.com/iquzart/workstation-sway/blob/master/doc/Screen.jpg?raw=true "Screen Sample")
 
 
