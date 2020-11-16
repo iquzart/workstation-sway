@@ -157,6 +157,13 @@ bindsym $mod+r mode "resize"
 # Lock on keypress.
 bindsym $mod+Shift+o exec $lock
 
+# Screenshot
+# Take a screenshot with all output and save it into screenshots
+bindsym Print exec grim -t jpeg ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).jpg
+
+# Take a Screenshot with the region select
+bindsym $mod+Print exec grim -t jpeg -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).jpg
+
 # Function keyboard
 # TODO:
 # - XF86Display (turning off the display)
