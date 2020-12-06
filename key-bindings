@@ -165,12 +165,9 @@ bindsym Print exec grim -t jpeg ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).jpg
 bindsym $mod+Print exec grim -t jpeg -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).jpg
 
 # Function keyboard
-# TODO:
-# - XF86Display (turning off the display)
-#bindsym --locked XF86AudioMute exec pulsemixer --toggle-mute
-#bindsym --locked XF86AudioRaiseVolume exec pulsemixer --change-volume +1
-#bindsym --locked XF86AudioLowerVolume exec pulsemixer --change-volume -1
-#bindsym --locked XF86AudioMicMute exec pulsemixer --toggle-mute --id source-1
-
+# Volume
+bindsym XF86AudioRaiseVolume exec amixer set Master 3%+
+bindsym XF86AudioLowerVolume exec amixer set Master 3%-
+bindsym XF86AudioMute exec amixer set Master toggle
 # Send signal 1 to waybar when changing keyboard layout
 #bindsym $key-alt+space exec "pkill --signal SIGRTMIN+1 waybar"
